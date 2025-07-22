@@ -1,0 +1,48 @@
+.card{
+    max-width: 800px;
+    margin: 210px auto;
+    border: 1px solid gainsboro;
+    padding: 10px 20px 0px 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(173,173,173);
+    font-family:  "Montserrat", sans-serif;;
+}
+
+.espacamento{
+    padding: 0px 0px 10px;
+}
+
+hr{
+    margin:0;
+}
+
+.legenda-resultado{
+    margin: 0;
+}
+
+.info-legenda{
+    margin: 5px 0px 13px;
+}
+
+.abaixo-do-peso{
+    background-color:#77C3F2;}
+.normal{background-color:#7EC395;}
+.sobrepeso{background-color:#F2D852;}
+.obesidade-i{background-color:#F29829;}
+.obesidade-ii{background-color:#F26241;}
+.obesidade-iii{color:#D94E5A;}
+
+
+
+/* body section div p {
+margin-bottom: 8px;
+}
+
+body section div h2 {
+    margin: 0;
+}
+    
+.normal{ color: blue;
+margin: 0;
+padding-bottom: 10px;
+}  */
