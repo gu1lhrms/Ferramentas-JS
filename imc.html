@@ -14,7 +14,7 @@
 
 <body>
 <!-- section display flex  -->
-    <section class="card">
+    <section class="card d-flex">
     <div>
         <!-- Titulo -->
         <div>
@@ -34,39 +34,33 @@
         <div>
             <button onclick="calcularImc();">Calcular IMC</button>
         </div>
-        <div>
-            <p><strong>Resultado IMC:</strong></p>
+        <div class="resultado" >
+            <p><strong class=" resultado">Resultado IMC:</strong></p>
             <h2 id="resultado">&nbsp;</h2>
             <p  id="classificacao">&nbsp;</p>
         </div>
     </div>
-
-        <!-- <div>
+    <div class="vl"></div>
+    <div class="display-legenda" >
             <p class="legenda-resultado abaixo-do-peso"><strong>Abaixo do Peso</strong></p>
-            <hr class="abaixo-do-peso">
             <p class="info-legenda">Menos de 18,5 kg</p>
 
             <p class="legenda-resultado normal"><strong>Normal</strong></p>
-            <hr class="normal">
             <p class="info-legenda">Entre 18,6 e 24,9 kg</p>
 
             <p class="legenda-resultado sobrepeso"><strong>Sobrepeso</strong></p>
-            <hr class="sobrepeso">
             <p class="info-legenda">Entre 25 e 29,9 kg</p>
 
             <p class="legenda-resultado obesidade-i"><strong>Obesidade I</strong></p>
-            <hr class="obesidade-i">
             <p class="info-legenda">Entre 30 e 34,9 kg</p>
 
             <p class="legenda-resultado obesidade-ii"><strong>Obesidade II</strong></p>
-            <hr class="obesidade-ii">
             <p class="info-legenda">Entre 35 e 39,9 kg</p>
 
             <p class="legenda-resultado obesidade-iii"><strong>Obesidade III</strong></p>
-            <hr class="obesidade-iii">
             <p class="info-legenda">Mais de 40 kg</p>
 
-        </div> -->
+        </div>
     </section>
 
     <!-- Codigo em JS -->
@@ -94,13 +88,13 @@
             document.getElementById("resultado").innerHTML =
                 imc.toLocaleString("pt-br");
             if (imc < 18.5) {
-                $classificacao = "Baixo peso";
+                $classificacao = "<span class='abaixo-do-peso'><b>Baixo peso</></span>";
             }
-            else if (imc < 25) { $classificacao = "<b>Normal</b>"; }
-            else if (imc < 30) { $classificacao = "<b>Sobrepeso</b>"; }
-            else if (imc < 35) { $classificacao = "<b>Obesidade I</b>"; }
-            else if (imc < 40) { $classificacao = "<b>Obesidade II</b>"; }
-            else { $classificacao = "<b>Obesidade III</b>"; }
+            else if (imc < 25) { $classificacao = "<span class='normal'><b>Normal</b></span>"; }
+            else if (imc < 30) { $classificacao = "<span class='sobrepeso'><b>Sobrepeso</b></span>"; }
+            else if (imc < 35) { $classificacao = "<span class='obesidade-i'><b>Obesidade I</b></span>"; }
+            else if (imc < 40) { $classificacao = "<span class='obesidade-ii'><b>Obesidade II</b></span>"; }
+            else { $classificacao = "<span class='obesidade-iii'><b>Obesidade III</b>"; }
             document.getElementById("classificacao").innerHTML = $classificacao;
 
         }
