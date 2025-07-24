@@ -1,0 +1,25 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.btn {
+    border-color: rgb(214, 214, 214) !important;
+    background-color: white;
+    box-shadow: 4px 5px 7px rgb(197, 197, 197);
+}
+
+.btn:hover {
+    background-color: rgb(217, 255, 0) !important;
+    color: black;
+}
+
+body{
+    width: 475px !important;
+    margin-top: 200px;
+}
+
+.col-4{
+    width: 445px !important;
+}
